@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Josefin+Sans:wght@300&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.9)),url('im3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	color: rgba(255, 255, 255, 0.9);
+	font-family: 'Alegreya Sans', sans-serif;
+}
+#content_parent{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#allTables{
+	margin: 3% auto;
+	width: 70%;
+	clear: both;
+	position: relative;
+	top: 100px;
+}
+#allTables table{
+	margin: 0;
+	border-collapse: collapse;
+}
+#allTables table tr{
+}
+#allTables table tr th{
+	padding: 7px;
+	text-align: left;
+}
+#allTables table tr td{
+	padding: 7px;
+}
+table{
+	margin-top: 3%;
+}
+#allTables #imag{
+	height: 300px;
+	width: 400px;
+	margin-left: 5%;
+}
+#imag img{
+	height: 300px;
+	width: 400px;
+	object-position: center;
+	object-fit: contain;
+}
+#header{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+}
+#header span .login1{
+	padding: 10px;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+	background: transparent;
+	color: white;
+	border: none;
+	transition: all 0.3s;
+	border-radius: 8px;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.1rem;
+}
+#header span .register1{
+	padding: 10px;
+	margin: 10px 20px 0 0;
+	cursor: pointer;
+	background: transparent;
+	color: white;
+	border: none;
+	transition: all 0.3s;
+	border-radius: 8px;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.1rem;
+}
+#header span .login1:hover ,#header span .register1:hover{
+	background-color: #8f00b3;
+}
+
+/* Signing/ Login page Design */
+#signin{
+	height: 300px;
+	width: 70%;
+	margin: 10% auto;
+	background-color: white;
+	color: black;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 5px black;
+	text-align: center;
+	justify-content: center;
+}
+#signin input{
+	width: 40%;
+	padding: 10px;
+	margin-bottom: 15px;
+
+}
+.login_btn,.signup_btn{
+	width: 80px;
+	padding: 10px;
+	margin-left: 10%;
+	background-color: #6699ff;
+	transition: all 0.3s;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.login_btn:hover,.signup_btn:hover{
+	background-color: #004de6;
+}
+#registeration{
+	height: 600px;
+	width: 70%;
+	margin: 10% auto;
+	background-color: white;
+	color: black;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 5px black;
+	box-shadow: -5px -5px 5px black;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+#registeration input,#registeration select{
+	width: 40%;
+	padding: 8px;
+	margin-bottom: 15px;
+
+}
+
+
+@media screen and (max-width:800px) {
+
+#allTables{
+	width: 90%;
+}
+
+#header span h2{
+	font-size: 1.3rem;
+	position: absolute;
+	top: 45px;
+}
+#signin{
+	width: 85%;
+	margin: 10% auto;
+	margin-top: 30%;
+}
+#signin input{
+	width: 50%;
+}
+#registeration{
+	height: 650px;
+	width: 85%;
+	margin-top: 30%;
+	padding: 15px;
+	text-align: center;
+}
+#registeration input,#registeration select{
+	width: 50%;
+	padding: 8px;
+	margin-bottom: 20px;
+}
+}
+@media screen and (max-width:500px){
+	#allTables #imag{
+	height: 250px;
+	width: 350px;
+	border: 2px solid black;
+	margin-left: 0;
+}
+#imag img{
+	height: 250px;
+	width: 350px;
+	object-position: center;
+	object-fit: contain;
+}
+#signin{
+	height: 350px;
+	width: 95%;
+	margin-top: 30%;
+}
+#signin input{
+	width: 75%;
+}
+#registeration{
+	height: 650px;
+	width: 90%;
+	margin-top: 30%;
+	padding: 15px;
+	text-align: left;
+}
+#registeration input,#registeration select{
+	width: 60%;
+	padding: 4px;
+	margin-bottom: 20px;
+}
+}
